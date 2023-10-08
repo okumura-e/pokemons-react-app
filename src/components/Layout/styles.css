@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#APIlogo {
+    align-self: center;
+    margin-top: 2rem;
+    width: 20%;
+}

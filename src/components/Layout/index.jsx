@@ -3,7 +3,7 @@ import './styles.css'
 const Layout = ({children}) => {
     return(
         <section className="container">
-          <img src="../../../public/pokeapi_logo.png" alt="PokeAPI" />
+          <img id='APIlogo' src="../../../public/pokeapi_logo.png" alt="PokeAPI" />
             {children}
         </section>
     )
