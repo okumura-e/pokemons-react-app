@@ -11,7 +11,7 @@ const router = createBrowserRouter(
   createRoutesFromElements([
     <Route>
       <Route path="/" element={<FirstPage />} />
-      <Route path="/show" element={<SecondPage />} />
+      <Route path="/pokemon/:name" element={<SecondPage />} />
     </Route>,
   ])
 );
