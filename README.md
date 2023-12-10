@@ -14,12 +14,13 @@ After this, you must execute the `npm run dev` command and the project will run 
 
 <div style="display: inline-block">
    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
+   <img src="https://img.shields.io/badge/Axios-2023A?style=for-the-badge&logo=axios&logoColor=black" />
 </div>
 
 ## :fireworks: Extra Techs
 
 - Axios
+- React Hot Toast
 
 ## :page_facing_up: Pages
 
