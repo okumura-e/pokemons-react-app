@@ -1,0 +1,67 @@
+#pokeIMG {
+    margin: 45px 0;
+    width: 20%;
+    height: 20%;
+}
+
+#title {
+    margin-bottom: 50px;
+    align-self: center;
+    width: 341px;
+    height: 48px;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #0F326D;
+    font-family: "Concert One", cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h2{
+    color: #0F326D;
+    text-align: center;
+    font-family: "Concert One", cursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #5E5E5E;
+    text-align: center;
+    font-family: "Concert One", cursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grid {
+    display: grid;
+    align-self: center;
+  
+    grid-template-columns: repeat(1, 1fr);
+  
+    gap: 60px;
+  }
+  
+  @media (min-width: 768px) {
+    input {
+      width: 33%;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
