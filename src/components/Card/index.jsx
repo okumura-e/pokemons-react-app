@@ -1,16 +1,18 @@
 import './styles.css'
+import { useNavigate } from "react-router-dom";
 
 const Card = props => {
-    return(
-        <section className="card">
-          <img className='pokemonImg' src={props.image || "https://sm.ign.com/ign_br/screenshot/default/29-1_97wq.jpg"} alt="PokeAPI" />
-          <div className='textSection'>
-            <p className='title'>{props.name}</p>
-            <p className='description'>tipo: Eletrico</p>
-            <p className='description'>status base: 45</p>
-          </div>
-        </section>
-    )
+  const navigate = useNavigate();
+  return(
+    <section className="card" onClick={()=> {navigate(`/pokemon/${props.name}`)}}>
+      <img className='pokemonImg' src={props.image || "https://cdn-icons-png.flaticon.com/512/188/188918.png"} alt="PokeAPI" />
+      <div className='textSection'>
+        <p className='title'>{props.name}</p>
+        <p className='description'>{props.height ? `Height: ${props.height}` : ''} </p>
+        <p className='description'>{props.status ? `Base experience: ${props.status}` : ''} </p>
+      </div>
+    </section>
+  )
 }
 
 export default Card
