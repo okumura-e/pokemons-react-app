@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import Layout from "../../components/Layout";
 import "./styles.css";
 import Card from "../../components/Card";
@@ -30,12 +32,15 @@ function App() {
       .then((response) => {
         setPokemons([response.data]);
       })
-      .catch((error) => {});
+      .catch((error) => {
+        toast.error(`o Pokemon ${search.toUpperCase()} não foi encontrado`);
+      });
     event.preventDefault();
   };
 
   return (
     <Layout>
+      <Toaster />
       <form>
         <input
           onChange={handleInputChange}
@@ -53,6 +58,8 @@ function App() {
           <Card
             key={index}
             name={pokemon.name}
+            height={pokemon.height}
+            status={pokemon.base_experience}
             image={pokemon?.sprites?.other?.dream_world?.front_default}
           />
         ))}
