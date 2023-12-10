@@ -2,7 +2,7 @@
 
 ## :pencil2: Description
 
-<p>It's a application with <a href="https://pokeapi.co">PokeAPI</a> auth forms, profile dashboard, search users and profiles.</p>
+<p>It's a application with <a href="https://pokeapi.co">PokeAPI</a>, you can search pokemons and get informations.</p>
 
 ## :computer: How to run
 
